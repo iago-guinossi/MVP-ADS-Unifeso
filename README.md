@@ -39,6 +39,7 @@ Com uma interface amigável e recursos interativos, o site se tornará uma ferra
 # **Tecnologia Utilizada**
 
 ● React
+
 ● Componentes personalizador criados com styled-components
 
 
