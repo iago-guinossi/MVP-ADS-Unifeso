@@ -36,38 +36,15 @@ Com uma interface amigável e recursos interativos, o site se tornará uma ferra
 
 ● Login para Administradores: Um botão de login deve ser disponibilizado para que os administradores acessem áreas restritas do site.
 
+**Tecnologia Utilizada**
 
-**Requisitos Funcionais (RF)**
-
-
-RF01 – O sistema deve permitir que visitantes acessem informações sobre biodiversidade, trilhas, cachoeiras e eventos.,
-
-RF02 – O site deve conter uma área específica para os administradores inserirem e atualizarem conteúdos sobre eventos, trilhas e temporadas.,
-
-RF03 – Os administradores devem poder configurar a disponibilidade e os horários de funcionamento de eventos e temporadas.,
-
-RF04 – Deve haver um botão de login exclusivo para acesso de administradores.,
-
-RF05 – O sistema deve restringir o acesso a áreas administrativas apenas a usuários autenticados como administradores.,
-
-RF06 – Menu de Navegação, o sistema deve apresentar um menu de navegação com links para as seções: Início, Atrativos, Galeria, Contato e Sobre.,
-
-RF07 – Página de Contato, o sistema deve incluir um formulário simples de contato com os campos: nome, e-mail e mensagem.,
-
-RF08 – Rodapé com Informações, o site deve conter um rodapé com: Links para redes sociais, Nome da equipe desenvolvedora, Créditos de imagens (se aplicável).
+● React
+● Componentes personalizador criados com styled-components
 
 
-**Requisitos Não Funcionais (RNF)**
+**Como Funcionar projeto local**
 
-
-RNF01 – O sistema deve apresentar bom desempenho, com resposta rápida, mesmo com muitos usuários simultâneos.,
-
-RNF02 – A interface do site deve ser intuitiva e amigável, facilitando a navegação do visitante.,
-
-RNF03 – O sistema deve garantir a segurança e privacidade dos dados dos administradores.,
-
-RNF04 – A plataforma deve estar disponível online com alta confiabilidade (alta disponibilidade).,
-
-RNF05 – O sistema deve ser responsivo, acessível em diferentes dispositivos (computadores, tablets e smartphones).
-
-RNF06 – SEO otimizado, configuração de meta tags para melhor indexação nos motores de busca.
+# install the dependencies
+npm i
+# start the development server
+npm start
