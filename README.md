@@ -48,6 +48,9 @@ Com uma interface amigável e recursos interativos, o site se tornará uma ferra
 # **Como Funcionar projeto local**
 
 **install the dependencies**
+
 npm i
+
 **start the development server**
-npm start
+
+npm run dev
