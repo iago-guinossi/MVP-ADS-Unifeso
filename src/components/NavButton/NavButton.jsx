@@ -5,6 +5,8 @@ import LetterX from '../../assets/letterx.svg?react'
 import Threebars from '../../assets/threebars.svg?react'
 
 const ContainerDesktop = styled.div`
+  display: flex;
+  align-items: center;
   @media (max-width: 570px) {
     display: none;
   }
@@ -31,15 +33,17 @@ const LoginText = styled.span`
 
 const ContainerMobile = styled.div`
   display: none;
-  position: relative;
+
   @media (max-width: 570px){
     display: flex;
   }  
 `
 
 const Button = styled.button`
+  position: relative;
   padding: 10px 20px;
   width:50px;
+  height: 50px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
@@ -50,12 +54,12 @@ const Button = styled.button`
 `;
 
 const StyledThreebars = styled(Threebars)`
-  width: 20px;
-  height: auto;
-  transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 20px;
+  height: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translate(-50%, -50%) scale(${({ $visible }) => ($visible ? 1 : 0.5)});
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   pointer-events: none;
@@ -63,12 +67,12 @@ const StyledThreebars = styled(Threebars)`
 `
 
 const StyledLetterX = styled(LetterX)`
-  width: 20px;
-  height: auto;
-  transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 20px;
+  height: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translate(-50%, -50%) scale(${({ $visible }) => ($visible ? 1 : 0.5)});
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   pointer-events: none;
@@ -78,9 +82,9 @@ const StyledLetterX = styled(LetterX)`
 const ContainerSideBar = styled.div`
   width: 180px;
   height: calc(100vh - 120px);
-  position: fixed;
+  position: absolute;
   right: 0;
-  bottom: 0;
+  top: 120px;
   background-color: var(--white);
   opacity: ${({ $show }) => ($show ? 1 : 0)};
 `
@@ -100,30 +104,30 @@ const SideBarButton = styled.div`
 
 export function NavButton({ name, navButtons }) {
 
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    return (
-      <>
-        <ContainerDesktop>
-            <DropDown name={'Descubra'} navButtons={['Trilhas', 'Cachoeiras', 'Eventos']} />
-            <DropDown name={'Sobre'} navButtons={['Biodiversidade', 'Temporada', 'Contato']} />
-            <ButtonLogin><LoginText>Login ADM</LoginText></ButtonLogin>
-        </ContainerDesktop>
-        <ContainerMobile>
-            <Button onClick={() => setOpen(!open)}>
-              <StyledThreebars $visible={!open}/>
-              <StyledLetterX $visible={open}/>
-            </Button>
-            <ContainerSideBar $show={open}>
-              <SideBarButton>Trilhas</SideBarButton>
-              <SideBarButton>Cachoeiras</SideBarButton>
-              <SideBarButton>Eventos</SideBarButton>
-              <SideBarButton>Biodiversidade</SideBarButton>
-              <SideBarButton>Temporada</SideBarButton>
-              <SideBarButton>Contato</SideBarButton>
-              <SideBarButton>Login ADM</SideBarButton>
-            </ContainerSideBar>
-        </ContainerMobile>
-      </>
-    )
+  return (
+    <>
+      <ContainerDesktop>
+        <DropDown name={'Descubra'} navButtons={['Trilhas', 'Cachoeiras', 'Eventos']} />
+        <DropDown name={'Sobre'} navButtons={['Biodiversidade', 'Temporada', 'Contato']} />
+        <ButtonLogin><LoginText>Login ADM</LoginText></ButtonLogin>
+      </ContainerDesktop>
+      <ContainerMobile>
+        <Button onClick={() => setOpen(!open)}>
+          <StyledThreebars $visible={!open} />
+          <StyledLetterX $visible={open} />
+        </Button>
+        <ContainerSideBar $show={open}>
+          <SideBarButton>Trilhas</SideBarButton>
+          <SideBarButton>Cachoeiras</SideBarButton>
+          <SideBarButton>Eventos</SideBarButton>
+          <SideBarButton>Biodiversidade</SideBarButton>
+          <SideBarButton>Temporada</SideBarButton>
+          <SideBarButton>Contato</SideBarButton>
+          <SideBarButton>Login ADM</SideBarButton>
+        </ContainerSideBar>
+      </ContainerMobile>
+    </>
+  )
 }
