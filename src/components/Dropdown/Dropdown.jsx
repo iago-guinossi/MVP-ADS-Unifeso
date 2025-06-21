@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import Arrow from '../../assets/arrow.svg?react'
+import Arrow from '@/assets/arrow.svg?react'
 
 const Container = styled.div`
   min-width: 130px;

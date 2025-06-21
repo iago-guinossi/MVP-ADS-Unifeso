@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import logo from '@/assets/logo.jpeg'
-import { NavButton } from "../NavButton";
+import { NavButton } from "@/components/NavButton";
 
 const Container = styled.div`
     height: 120px;

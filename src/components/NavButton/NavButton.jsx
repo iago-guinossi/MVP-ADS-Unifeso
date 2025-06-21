@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { DropDown } from "../Dropdown/Dropdown";
-import LetterX from '../../assets/letterx.svg?react'
-import Threebars from '../../assets/threebars.svg?react'
+import { DropDown } from "@/components/Dropdown/Dropdown";
+import LetterX from '@/assets/letterx.svg?react'
+import Threebars from '@/assets/threebars.svg?react'
 
 const ContainerDesktop = styled.div`
   display: flex;
