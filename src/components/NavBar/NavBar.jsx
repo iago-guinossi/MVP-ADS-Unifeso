@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import logo from '../../assets/logo.jpeg'
+import logo from '@/assets/logo.jpeg'
 import { NavButton } from "../NavButton";
 
 const Container = styled.div`
     height: 120px;
-    width: 100vw;
+    width: 100%;
     background-color: var(--white);
     display: flex;
     box-sizing: border-box;
