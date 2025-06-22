@@ -1,0 +1,61 @@
+[
+    {
+        "name": "Pedra da Tartaruga",
+        "summary": "A Pedra da Tartaruga, montanha símbolo do PNMMT, atualmente é o atrativo mais procurado pelos visitantes. A trilha com 650 metros de extensão e baixa dificuldade abrange o público em geral. O cume proporciona uma vista panorâmica com uma vasta cadeia de montanhas incluindo a Serra dos Órgãos e os Três Picos localizadas nas UCs limítrofes: Parque Nacional Serra dos Órgãos e Parque Estadual dos Três Picos respectivamente. É um local muito procurado por seu caráter contemplativo. Atualmente é possível notar próximo a formação rochosa a presença de árvores nativas que foram inseridas desde a criação do Parque, reflorestando a área e proporcionando sombra onde antes era totalmente exposto. No cume de 1180 metros de altitude as atividades de rapel, acampamento e piquenique são as mais procuradas.",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18160.798410365107!2d-43.0064722!3d-22.3606883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x984dae6d1e488f%3A0x235ce210eeb02c18!2sPedra%20da%20Tartaruga%20-%20Parque%20Municipal%20Montanhas%20de%20Teres%C3%B3polis!5e1!3m2!1spt-BR!2sbr!4v1750606015336!5m2!1spt-BR!2sbr",
+        "images": [
+            { 
+                "src": "/src/assets/trilhas/pedraTartaruga01.jpg",
+                "alt": "Imagem da Pedra da Tartaruga"
+            },
+            { 
+                "src": "/src/assets/trilhas/pedraTartaruga02.jpg",
+                "alt": "Imagem da Pedra da Tartaruga"
+            },
+            { 
+                "src": "/src/assets/trilhas/pedraTartaruga03.jpg",
+                "alt": "Imagem da Pedra da Tartaruga"
+            },
+            { 
+                "src": "/src/assets/trilhas/pedraTartaruga04.jpg",
+                "alt": "Imagem da Pedra da Tartaruga"
+            }
+        ],
+        "distance" : "650 metros",
+        "location": "Granja FLorestal"
+    },
+    {
+        "name": "Pedra do Elefante",
+        "summary": "A Pedra do Elefante fica na divisa entre Teresópolis e Guapimirim, dentro do Parque Estadual dos Três Picos. Ela tem cerca de 1.180 metros de altitude e oferece uma vista espetacular da Serra dos Órgãos, incluindo montanhas icônicas como o Dedo de Deus, Escalavrado e Pedra do Sino.",
+        "map": "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d567.1121430865874!2d-42.9841972!3d-22.4617821!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1750606075835!5m2!1spt-BR!2sbr",
+        "images": [
+            { 
+                "src": "/src/assets/trilhas/pedraElefante01.jpg",
+                "alt": "Imagem da Pedra do Elefante"
+            },
+            { 
+                "src": "/src/assets/trilhas/pedraElefante02.jpeg",
+                "alt": "Imagem da Pedra do Elefante"
+            },
+            { 
+                "src": "/src/assets/trilhas/pedraElefante03.jpeg",
+                "alt": "Imagem da Pedra do Elefante"
+            }
+        ],
+        "distance" : "630 metros",
+        "location": "Soberbo"
+    },
+    {
+        "name": "Trilha 360",
+        "summary": "A Trilha 360° do PARNASO (Parque Nacional da Serra dos Órgãos), na sede de Teresópolis, é um verdadeiro espetáculo para quem curte natureza e vistas panorâmicas. Ela conecta duas trilhas clássicas do parque — a Mozart Catão e a Cartão Postal — formando um circuito circular com cerca de 4 km de extensão total, incluindo os mirantes. O destaque do percurso é o Mirante Borandá, que oferece uma vista deslumbrante da Serra dos Órgãos e, em dias claros, até da cidade do Rio de Janeiro. A trilha é bem marcada, passa por trechos de mata atlântica e tem nível de dificuldade moderado, com subidas e descidas suaves dependendo do sentido escolhido.",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1134.3340595297916!2d-42.9844262!3d-22.4483656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b2fc4e7ae71d%3A0xa560f33c6b47710e!2sParque%20Nacional%20da%20Serra%20dos%20%C3%93rg%C3%A3os%20-%20PARNASO%20-%20Sede%20Teres%C3%B3polis!5e1!3m2!1spt-BR!2sbr!4v1750606108094!5m2!1spt-BR!2sbr",
+        "images": [
+            { 
+                "src": "/src/assets/trilhas/trilha360.jpeg",
+                "alt": "Imagem da Trilha 360"
+            }
+        ],
+        "distance" : "4 Km",
+        "location": "Parque Nacional Da Serra dos Órgãos"
+    }
+]
