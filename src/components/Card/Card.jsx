@@ -40,7 +40,6 @@ const Text = styled.span`
 `
 
 export function Card({ images, distance, date, location, name, onClick }) {
-    
   return (
     <Container onClick={onClick}>
       <Image {...images[0]}></Image>

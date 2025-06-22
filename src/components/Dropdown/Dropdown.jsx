@@ -41,7 +41,7 @@ const Button = styled.button`
 const StyledArrow = styled(Arrow)`
   width: 20px;
   height: auto;
-  transform: ${({ open }) => (open ? 'rotate(180deg)' : 'rotate(0deg)')};
+  transform: ${({ $open }) => ($open ? 'rotate(180deg)' : 'rotate(0deg)')};
   transition: transform 0.3s ease;
   fill: var(--black);
 `
@@ -64,7 +64,7 @@ export function DropDown({ name, navButtons }) {
 
     return (
         <Container>
-            <Button onClick={() => setOpen(!open)}>{name} <StyledArrow open={open} /></Button>
+            <Button onClick={() => setOpen(!open)}>{name} <StyledArrow $open={open} /></Button>
             <ContainerDropdown $show={open}>
                 {navButtons.map((navButton, index) => {
                     return <DropdownButton key={index}>{navButton}</DropdownButton>

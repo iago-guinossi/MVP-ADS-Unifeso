@@ -25,16 +25,16 @@ const Button = styled.button`
   cursor: pointer;
   z-index: 1;
 
-  ${({ direction }) => direction === "left" && `left: 10px;`}
-  ${({ direction }) => direction === "right" && `right: 10px;`}
+  ${({ $direction }) => $direction === "left" && `left: 10px;`}
+  ${({ $direction }) => $direction === "right" && `right: 10px;`}
 `;
 
 const ArrowIcon = styled(Arrow)`
   width: 16px;
   height: 16px;
   color: var(--white);
-  transform: ${({ direction }) =>
-    direction === 'left' ? 'rotate(90deg)' : 'rotate(-90deg)'};
+  transform: ${({ $direction }) =>
+    $direction === 'left' ? 'rotate(90deg)' : 'rotate(-90deg)'};
 `;
 
 
@@ -46,12 +46,12 @@ export function Carousel({ images }) {
 
   return (
     <Container>
-      <Button direction="left" onClick={prev}>
-        <ArrowIcon direction="left"/>
+      <Button $direction="left" onClick={prev}>
+        <ArrowIcon $direction="left"/>
       </Button>
       <Image src={images[index].src} alt={images[index].alt} />
-      <Button direction="right" onClick={next}>
-        <ArrowIcon direction="right"/>
+      <Button $direction="right" onClick={next}>
+        <ArrowIcon $direction="right"/>
       </Button>
     </Container>
   );
