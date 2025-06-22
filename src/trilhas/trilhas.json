@@ -5,19 +5,19 @@
         "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18160.798410365107!2d-43.0064722!3d-22.3606883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x984dae6d1e488f%3A0x235ce210eeb02c18!2sPedra%20da%20Tartaruga%20-%20Parque%20Municipal%20Montanhas%20de%20Teres%C3%B3polis!5e1!3m2!1spt-BR!2sbr!4v1750606015336!5m2!1spt-BR!2sbr",
         "images": [
             { 
-                "src": "/src/assets/trilhas/pedraTartaruga01.jpg",
+                "src": "/trilhas/pedraTartaruga01.jpg",
                 "alt": "Imagem da Pedra da Tartaruga"
             },
             { 
-                "src": "/src/assets/trilhas/pedraTartaruga02.jpg",
+                "src": "/trilhas/pedraTartaruga02.jpg",
                 "alt": "Imagem da Pedra da Tartaruga"
             },
             { 
-                "src": "/src/assets/trilhas/pedraTartaruga03.jpg",
+                "src": "/trilhas/pedraTartaruga03.jpg",
                 "alt": "Imagem da Pedra da Tartaruga"
             },
             { 
-                "src": "/src/assets/trilhas/pedraTartaruga04.jpg",
+                "src": "/trilhas/pedraTartaruga04.jpg",
                 "alt": "Imagem da Pedra da Tartaruga"
             }
         ],
@@ -30,15 +30,15 @@
         "map": "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d567.1121430865874!2d-42.9841972!3d-22.4617821!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1750606075835!5m2!1spt-BR!2sbr",
         "images": [
             { 
-                "src": "/src/assets/trilhas/pedraElefante01.jpg",
+                "src": "/trilhas/pedraElefante01.jpg",
                 "alt": "Imagem da Pedra do Elefante"
             },
             { 
-                "src": "/src/assets/trilhas/pedraElefante02.jpeg",
+                "src": "/trilhas/pedraElefante02.jpeg",
                 "alt": "Imagem da Pedra do Elefante"
             },
             { 
-                "src": "/src/assets/trilhas/pedraElefante03.jpeg",
+                "src": "/trilhas/pedraElefante03.jpeg",
                 "alt": "Imagem da Pedra do Elefante"
             }
         ],
@@ -51,7 +51,7 @@
         "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1134.3340595297916!2d-42.9844262!3d-22.4483656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b2fc4e7ae71d%3A0xa560f33c6b47710e!2sParque%20Nacional%20da%20Serra%20dos%20%C3%93rg%C3%A3os%20-%20PARNASO%20-%20Sede%20Teres%C3%B3polis!5e1!3m2!1spt-BR!2sbr!4v1750606108094!5m2!1spt-BR!2sbr",
         "images": [
             { 
-                "src": "/src/assets/trilhas/trilha360.jpeg",
+                "src": "/trilhas/trilha360.jpeg",
                 "alt": "Imagem da Trilha 360"
             }
         ],
