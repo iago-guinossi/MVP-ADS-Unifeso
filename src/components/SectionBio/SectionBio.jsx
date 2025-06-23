@@ -30,7 +30,7 @@ const Button = styled.button`
     border-radius: 99px;
     background-color: var(--green);
     color: var(--black);
-    border: 1px solid #398d44;
+    border: 1px solid var(--dark-green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ const Button = styled.button`
     text-decoration: none;
 
     &:active {
-    background-color: #a9d9ab; /* tom semelhante, um pouco mais escuro */
+    background-color: var(--active-green)
   }
 
 `

@@ -7,8 +7,8 @@ const Container = styled.div`
     width: 100%;
     border-radius: 12px;
     box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.3);
-    background-color: var(--background-light);
-    color: var(--textcolor-dark);
+    background-color: var(--white);
+    color: var(--black);
     align-items: center;
     overflow: hidden;
 `
