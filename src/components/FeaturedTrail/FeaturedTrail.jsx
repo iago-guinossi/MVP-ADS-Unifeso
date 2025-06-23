@@ -4,31 +4,72 @@ import { useState } from "react"
 import { Card } from '../Card';
 import { Modal } from '../Modal';
 
-
 const Container = styled.div`
+    width: 100%;
+    padding: 54px 16px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--white);
+`
+
+const ContainerTrail = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    `
+`
+
+const Title = styled.h1`
+    font-size: 32px;
+    margin: 0 auto 16px;
+    color: var(--black);
+`
+
+const Button = styled.button`
+    font-size: 18px;
+    border-radius: 99px;
+    background-color: var(--green);
+    color: var(--black);
+    border: 1px solid var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 43px;
+    margin-top: 36px;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:active {
+    background-color: var(--active-green)
+  }
+
+`
 
 export function FeaturedTrail() {
     const [trilhaSelecionada, setTrilhaSelecionada] = useState(null);
     return (
-    <>
-        <Container>
+    <Container>
+        <Title>Principais Trilhas</Title>
+        <ContainerTrail>
             {
                 trilhas.map((trilha, index) => (
                     <Card key={index} {...trilha} onClick={() => setTrilhaSelecionada(trilha)} />
                 ))
             }
-        </Container>
+        </ContainerTrail>
       {
         trilhaSelecionada && (
             <Modal trilha={trilhaSelecionada} onClose={() => setTrilhaSelecionada(null)} />
         )
     }
-    </>
+    <Button>Conheça mais!</Button>
+    </Container>
     )
 }
