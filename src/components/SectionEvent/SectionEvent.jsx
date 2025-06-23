@@ -2,6 +2,7 @@ import styled from "styled-components";
 import trilhas from '@/trilhas/trilhas.json'
 import { useState } from "react";
 import { Card } from "../Card";
+import { Modal } from "../Modal";
 
 const Container = styled.div`
     width: 100%;
