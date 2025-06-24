@@ -57,5 +57,93 @@
         ],
         "distance" : "4 Km",
         "location": "Parque Nacional Da Serra dos Órgãos"
+    },
+    {
+        "name":"Bico Maior",
+        "summary":"Percorra este trilha bate-volta de 5,1-km, perto de Teresópolis, Rio de Janeiro. Geralmente considerado um percurso desafiador, é preciso uma média de 2 h 18 min para ser concluído. Este trilha é ótimo para Caminhadas, e você provavelmente não encontrará muitas outras pessoas enquanto explora. A trilha está aberta durante o ano todo e é linda para visitar a qualquer momento.",
+        "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.89894364572064!2d-42.79575623535205!3d-22.34771923862344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9837306e92dd75%3A0x29c37342fbf25331!2sVale%20de%20Bonsucesso%2C%20Teres%C3%B3polis%20-%20RJ!5e1!3m2!1spt-BR!2sbr!4v1750720752992!5m2!1spt-BR!2sbr",
+        "images":[
+            {
+                "src":"/trilhas/bicoMaior01.jpeg",
+                "alt":"Imagem da trilha Bico Maior"
+            },
+            {
+                "src":"/trilhas/bicoMaior02.jpeg",
+                "alt":"Imagem da trilha Bico Maior"
+            },
+            {
+                "src":"/trilhas/bicoMaior03.jpeg",
+                "alt":"Imagem da trilha Bico Maior"
+            },
+            {
+                "src":"/trilhas/bicoMaior04.jpeg",
+                "alt":"Imagem da trilha Bico Maior"
+            }
+        ],
+        "distance":"5,1 km",
+        "location":"Parque Estadual dos Três Picos"
+    },
+    {
+        "name":"Alto da Boa Vista",
+        "summary":"A trilha para o Alto da Boa Vista em Teresópolis é uma bela caminhada que oferece vistas incríveis da natureza exuberante da região. A trilha começa na entrada do Parque Nacional da Serra dos Órgãos, no bairro da Fazenda Alpina. A entrada para o parque é gratuita, mas é necessário assinar um termo de responsabilidade e seguir as regras de preservação ambiental.",
+        "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.6509287031767!2d-42.93235993839673!3d-22.43575616672963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b4b22932bb51%3A0x72b56f547254b039!2sMeudon%2C%20Teres%C3%B3polis%20-%20RJ!5e1!3m2!1spt-BR!2sbr!4v1750721030488!5m2!1spt-BR!2sbr",
+        "images":[
+            {
+                "src":"/trilhas/altoDaBoaVista01.jpeg",
+                "alt":"Imagem da trilha Alto da Boa Vista"
+            },
+            {
+                "src":"/trilhas/altoDaBoaVista02.jpeg",
+                "alt":"Imagem da trilha Alto da Boa Vista"
+            },
+            {
+                "src":"/trilhas/altoDaBoaVista03.jpeg",
+                "alt":"Imagem da trilha Alto da Boa Vista"
+            }
+        ],
+        "distance":"4,5 km",
+        "location":"Parque Estadual dos Três Picos"
+    },
+    {
+        "name":"Pedra do Sino",
+        "summary":"Percorra este trilha bate-volta de 20,0-km, perto de Teresópolis, Rio de Janeiro. Geralmente considerado um percurso desafiador. Esta é uma área muito popular para backpacking, observação de pássaros e acampamento, portanto você provavelmente encontrará outras pessoas enquanto explora. A trilha está aberta durante o ano todo e é linda para visitar a qualquer momento.",
+        "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d783.2139928858721!2d-43.0009385835983!3d-22.45131649612646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b39eaf18d56d%3A0x634a788a75a54c38!2sTrilha%20Suspensa!5e1!3m2!1spt-BR!2sbr!4v1750721271294!5m2!1spt-BR!2sbr",
+        "images":[
+            {
+                "src":"/trilhas/pedraDoSino01.jpeg",
+                "alt":"Imagem da trilha Pedra do Sino"
+            },
+            {
+                "src":"/trilhas/pedraDoSino02.jpeg",
+                "alt":"Imagem da trilha Pedra do Sino"
+            },
+            {
+                "src":"/trilhas/pedraDoSino03.jpeg",
+                "alt":"Imagem da trilha Pedra do Sino"
+            }
+        ],
+        "distance":"20 km",
+        "location":"Parque Nacional Da Serra dos Órgãos"
+    },
+    {
+        "name":"Mirante do Inferno - Pedra do São João",
+        "summary":"Aproveite este trilha bate-volta de 12,4-km, perto de Teresópolis, Rio de Janeiro. Geralmente considerado um percurso desafiador. Este é um trilha popular para backpacking, acampamento e Caminhadas, mas você ainda pode ter algum momento de tranquilidade nos horários mais calmos do dia. A trilha está aberta durante o ano todo e é linda para visitar a qualquer momento.",
+        "map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6265.68469440603!2d-42.99955943267472!3d-22.45191948939688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b39eaf18d56d%3A0x634a788a75a54c38!2sTrilha%20Suspensa!5e1!3m2!1spt-BR!2sbr!4v1750721511378!5m2!1spt-BR!2sbr",
+        "images":[
+            {
+                "src":"/trilhas/miranteDoInferno01.jpeg",
+                "alt":"Imagem da trilha Mirante do Inferno"
+            },
+            {
+                "src":"/trilhas/miranteDoInferno02.jpeg",
+                "alt":"Imagem da trilha Mirante do Inferno"
+            },
+            {
+                "src":"/trilhas/miranteDoInferno03.jpeg",
+                "alt":"Imagem da trilha Mirante do Inferno"
+            }
+        ],
+        "distance":"12,4 km",
+        "location":"Parque Nacional Da Serra dos Órgãos"
     }
 ]
