@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import trilhas from '@/trilhas/trilhas.json'
+import cachoeiras from '@/cachoeiras/cachoeiras.json'
 import { useState } from "react";
 import { Card } from "../Card";
 import { Modal } from "../Modal";
@@ -53,19 +53,23 @@ const Button = styled.button`
 `
 
 export function SectionWaterfall() {
-    const [trilhaSelecionada, setTrilhaSelecionada] = useState(null);
+    const [cachoeiraSelecionada, setCachoeiraSelecionada] = useState(null);
+
+    const cards = [];
+        for (let i = 0; i < 3 && i < cachoeiras.length; i++) {
+            cards.push(
+                <Card key={i} {...cachoeiras[i]} onClick={() => setCachoeiraSelecionada(cachoeiras[i])} />
+            );
+        }
+
     return (
         <Container>
             <Title>Principais Cachoeiras</Title>
             <WaterfallContainer>
+                {cards}
                 {
-                    trilhas.map((trilha, index) => (
-                        <Card key={index} {...trilha} onClick={() => setTrilhaSelecionada(trilha)} />
-                    ))
-                }
-                {
-                    trilhaSelecionada && (
-                        <Modal trilha={trilhaSelecionada} onClose={() => setTrilhaSelecionada(null)} />
+                    cachoeiraSelecionada && (
+                        <Modal trilha={cachoeiraSelecionada} onClose={() => setCachoeiraSelecionada(null)} />
                     )
                 }
             </WaterfallContainer>
