@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Cachoeira dos Frades",
+        "summary": "A Cachoeira dos Frades, um dos cartões postais de Teresópolis, possui uma linda queda de aproximadamente 10 metros de altura, com declive acentuado e um grande volume d'água que forma uma grande piscina natural. A cachoeira ainda conta com uma mini praia e um gramado para quem quiser pegar um pouco de sol na serra ou brincar com a criançada.",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1567.68948226241!2d-42.8006430895071!3d-22.33938646215655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x983746ca7737dd%3A0x6241f52b8aae6321!2sCachoeira%20dos%20Frades!5e1!3m2!1spt-BR!2sbr!4v1750722584050!5m2!1spt-BR!2sbr",
+        "images": [
+            { 
+                "src": "/cachoeiras/cachoeiraDosFrades01.jpg",
+                "alt": "Imagem da Cachoeira dos Frades"
+            },
+            { 
+                "src": "/cachoeiras/cachoeiraDosFrades02.jpg",
+                "alt": "Imagem da Cachoeira dos Frades"
+            },
+            { 
+                "src": "/cachoeiras/cachoeiraDosFrades03.jpg",
+                "alt": "Imagem da Cachoeira dos Frades"
+            }
+        ],
+        "location": "Parque Estadual dos Três Picos"
+    },
+    {
+        "name": "Cachoeira Olho D'água",
+        "summary": "A Cachoeira Olho DÁgua é simplesmente incrível para aqueles que buscam desfrutar da natureza em um ambiente tranquilo e acolhedor. Afinal, ela é formada por duas quedas dágua e um poço maior, razão pela qual as pessoas que a conhecem passam a considerá-la um lugar apropriado tanto para visitantes quanto para quem quiser acampar",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6269.412572180056!2d-43.0176562!3d-22.3692811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x984d76bcbde47b%3A0x86a294e859000909!2zQ2FjaG9laXJhIE9saG8gZOKAmcOBZ3Vh!5e1!3m2!1spt-BR!2sbr!4v1750723068456!5m2!1spt-BR!2sbr",
+        "images":[
+            {
+                "src": "/cachoeiras/cachoeiraOlhoDagua01.jpeg",
+                "alt": "Imagem da Cachoeira Olho D'água"
+            },
+            {
+                "src": "/cachoeiras/cachoeiraOlhoDagua02.jpeg",
+                "alt": "Imagem da Cachoeira Olho D'água"
+            },
+            {
+                "src": "/cachoeiras/cachoeiraOlhoDagua03.jpeg",
+                "alt": "Imagem da Cachoeira Olho D'água"
+            }
+        ],
+        "location": "Parque Estadual dos Três Picos"
+    },
+    {
+        "name": "Poço Dois Irmãos",
+        "summary": "O Poço Dois Irmãos é um dos refúgios naturais mais bonitos da sede de Teresópolis, localizado dentro do Parque Nacional da Serra dos Órgãos. Ele fica a cerca de 150 metros de caminhada leve a partir da piscina natural da sede do parque. O local é conhecido por suas águas cristalinas e tranquilas, ideais para banho e relaxamento. É de fácil acesso e costuma ser uma parada popular para quem faz trilhas leves na região. Mesmo em dias mais frios, o visual compensa — perfeito para fotos e para curtir a natureza em paz.",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1566.4614197052363!2d-42.98555820000001!3d-22.44835679999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b3f8f3021f61%3A0xfb9150bcab9e98a!2zUG_Dp28gRG9pcyBJcm3Do29z!5e1!3m2!1spt-BR!2sbr!4v1750723510264!5m2!1spt-BR!2sbr",
+        "images": [
+            {
+                "src": "/cachoeiras/pocoDoisIrmaos01.jpeg",
+                "alt": "Imagem do Poço Dois Irmãos"
+            },
+            {
+                "src": "/cachoeiras/pocoDoisIrmaos02.jpeg",
+                "alt": "Imagem do Poço Dois Irmãos"
+            },
+            {
+                "src": "/cachoeiras/pocoDoisIrmaos03.jpeg",
+                "alt": "Imagem do Poço Dois Irmãos"
+            }
+        ],
+        "location": "Parque Nacional da Serra dos Órgãos"
+    },
+    {
+        "name": "Cachoeira da Campanha",
+        "summary": "A Cachoeira da Campanha fica no Vale de Bonsucesso, em Teresópolis (RJ), e é um dos destinos naturais mais tranquilos da região. Ela é cercada por mata atlântica preservada e oferece um poço de águas claras, ideal para banho e relaxamento. O acesso é relativamente fácil, o que a torna uma boa opção para famílias ou para quem busca um passeio mais leve.",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d100359.01094118426!2d-42.8198187!3d-22.3019968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9839c9578c09c3%3A0x23b0bec28b648f4!2sCachoeira%20da%20Campanha!5e1!3m2!1spt-BR!2sbr!4v1750723852277!5m2!1spt-BR!2sbr",
+        "images":[
+            {
+                "src": "/cachoeiras/cachoeiraDaCampanha01.jpeg",
+                "alt": "Imagem da Cachoeira da Campanha"
+            },
+            {
+                "src": "/cachoeiras/cachoeiraDaCampanha02.jpeg",
+                "alt": "Imagem da Cachoeira da Campanha"
+            },
+            {
+                "src": "/cachoeiras/cachoeiraDaCampanha03.jpeg",
+                "alt": "Imagem da Cachoeira da Campanha"
+            }
+        ],
+        "location": "Parque Estadual dos Três Picos"
+    },
+    {
+        "name": "Véu da Noiva",
+        "summary": "A Cachoeira Véu da Noiva de Teresópolis está localizada dentro do Parque Nacional da Serra dos Órgãos, na região serrana do Rio de Janeiro. Ela é uma das atrações mais conhecidas da cidade, com uma queda dágua impressionante que lembra um véu esvoaçante — daí o nome. O acesso é feito por uma trilha de cerca de 3 km a partir da entrada do parque, com nível moderado de dificuldade. Durante o percurso, os visitantes passam por paisagens belíssimas e pontos como a Gruta do Presidente. No topo da cachoeira, há dois poços ideais para banho, embora o caminho até lá seja mais fechado e escorregadio.",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d100253.4172169656!2d-43.013418!3d-22.448514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b27c3ff553df%3A0xbb640bddb10bb9fc!2sV%C3%A9u%20da%20Noiva%20de%20Teres%C3%B3polis!5e1!3m2!1spt-BR!2sbr!4v1750724126885!5m2!1spt-BR!2sbr",
+        "images":[
+            {
+                "src": "/cachoeiras/veuDaNoiva01.jpeg",
+                "alt": "Imagem da Cachoeira Véu da Noiva"
+            },
+            {
+                "src": "/cachoeiras/veuDaNoiva02.jpeg",
+                "alt": "Imagem da Cachoeira Véu da Noiva"
+            },
+            {
+                "src": "/cachoeiras/veuDaNoiva03.jpeg",
+                "alt": "Imagem da Cachoeira Véu da Noiva"
+            }
+        ],
+        "location": "Parque Nacional da Serra dos Órgãos"
+    }
+]
