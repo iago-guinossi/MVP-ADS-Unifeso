@@ -1,0 +1,50 @@
+[
+    {
+        "name": "XXII Encontro de Pesquisadores",
+        "summary": "Este ano o Parnaso realizará seu XXIII Encontro de Pesquisadores mais cedo, em AGOSTO! O evento celebrará os 20 anos do Programa de Pesquisa do Parque, reunindo pesquisadores que constroem conhecimento sobre a unidade de conservação e a região para avaliar os avanços nas últimas décadas e discutir prioridades: o que aconteceu nestes 20 anos? Quais são as lacunas de conhecimento a serem preenchidas até o centenário do PARNASO, em 2039? Em breve serão abertas as inscrições para participação e envio de trabalhos, minicursos, oficinas etc. Você que é pesquisador agende aí: de 14 a 16 de agosto de 2025! Vamos junt@s transformar a pesquisa aplicada à gestão socioambiental e conservação da natureza na região do Parnaso!",
+        "images": [
+            {
+                "src": "/eventos/eventoEncontroPesquisadores.jpeg",
+                "alt": "Banner do evento XXXII Encontro de Pesquisadores"
+            }
+        ],
+        "location": "Parque Nacional da Serra dos Órgãos Sede Teresópolis",
+        "date": "14 a 16 de Agosto 2025"
+    },
+    {
+        "name": "Abril Indígena",
+        "summary": "No Dia dos Povos Indigenas, 19 de abril, o Núcleo Socioambiental Sesc Teresópolis convida para uma programação com diversidade e valorização dos povos originários, no Parque Nacional da Serra dos Órgãos, na sede de Teresópolis. Participe! Inscrições no local.",
+        "images": [
+            {
+                "src": "/eventos/eventoAbrilIndigena.jpeg",
+                "alt": "Banner do evento Abril Indígena"
+            }
+        ],
+        "location": "Parque Nacional da Serra dos Órgãos Sede Teresópolis",
+        "date": "19 de Abril 2025"
+    },
+    {
+        "name": "1º Festival de Cinema Ambiental",
+        "summary": "PARNASO apresenta: YVY - 1º Festival de Cinema Ambiental e de Montanhas de Teresópolis! De 15 a 18 de maio, o Parque Nacional da Serra dos Órgãos - Sede Teresópolis será palco de um evento imperdível! É com grande orgulho que o PARNASO, a terceira unidade de conservação mais antiga do Brasil, recebe o Festival YVY , um encontro especial que reúne cineastas, montanhistas e amantes da natureza. Este festival gratuito acontecerá simultaneamente à Abertura da Temporada de Montanhismo do PARNASO 2025, tornando o período ainda mais especial para os apaixonados por aventura, cultura e preservação ambiental!",
+        "images": [
+            {
+                "src": "/eventos/evento1FestivalDeCinema.jpeg",
+                "alt": "Banner do evento 1º Festival de Cinema Ambiental"
+            }
+        ],
+        "location":"Parque Nacional da Serra dos Órgãos Sede Teresópolis",
+        "date": "14 a 18 de Maio 2025"
+    },
+    {
+        "name": "Parnaso 85 anos",
+        "summary": "85 anos do Parque Nacional da Serra dos Órgãos! Venha comemorar conosco em um dia repleto de atividades para todas as idades, em parceria com o SESC Teresópolis! Preparamos uma programação especial que une natureza, cultura e diversão para comemorar essa data tão especial.",
+        "images": [
+            {
+                "src": "/eventos/eventoParnaso85Anos.jpeg",
+                "images": "Banner do evento Parnaso 85 anos"
+            }
+        ],
+        "location":"Parque Nacional da Serra dos Órgãos Sede Teresópolis",
+        "date": "30 de Novembro de 2025"
+    }
+]
