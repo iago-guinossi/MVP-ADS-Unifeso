@@ -1,23 +1,21 @@
-import { Cover } from "./components/Cover"
-import { FeaturedTrail } from "./components/FeaturedTrail/FeaturedTrail"
-import { Footer } from "./components/Footer/Footer"
-import { NavBar } from "./components/NavBar/NavBar"
-import { SectionBio } from "./components/SectionBio/SectionBio"
-import { SectionEvent } from "./components/SectionEvent/SectionEvent"
-import { SectionWaterfall } from "./components/SectionWaterfall/SectionWaterfall"
+import { BrowserRouter, Route, Routes } from "react-router"
+import { Home } from "./pages/Home/Home"
+import { Events } from "./pages/Events"
+import { Trails } from "./pages/Trails"
+import { Waterfalls} from "./pages/WaterFalls"
 
 function App() {
 
   return (
-    <>
-      <NavBar />
-      <Cover />
-      <SectionBio/>
-      <SectionEvent/>
-      <FeaturedTrail/>
-      <SectionWaterfall/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route index element={<Home/>}/>
+      <Route path="/eventos" element={<Events/>}/>
+      <Route path="/trilhas" element={<Trails/>}/>
+      <Route path="/cachoeiras" element={<Waterfalls/>}/>
+    </Routes>
+    </BrowserRouter>
+      
   )
 }
 
