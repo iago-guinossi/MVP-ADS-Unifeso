@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import trilhas from '@/trilhas/trilhas.json'
+import eventos from '@/eventos/eventos.json'
 import { useState } from "react";
 import { Card } from "../Card";
 import { Modal } from "../Modal";
@@ -53,19 +53,23 @@ const Button = styled.button`
 `
 
 export function SectionEvent() {
-    const [trilhaSelecionada, setTrilhaSelecionada] = useState(null);
+    const [cardSelecionado, setCardSelecionado] = useState(null);
+
+    const cards = [];
+            for (let i = 0; i < 3 && i < eventos.length; i++) {
+                cards.push(
+                    <Card key={i} {...eventos[i]} onClick={() => setCardSelecionado(eventos[i])} />
+                );
+            }
+
     return (
         <Container>
             <Title>Principais Eventos</Title>
             <EventContainer>
+                {cards}
                 {
-                    trilhas.map((trilha, index) => (
-                        <Card key={index} {...trilha} onClick={() => setTrilhaSelecionada(trilha)} />
-                    ))
-                }
-                {
-                    trilhaSelecionada && (
-                        <Modal trilha={trilhaSelecionada} onClose={() => setTrilhaSelecionada(null)} />
+                    cardSelecionado && (
+                        <Modal isEvent card={cardSelecionado} onClose={() => setCardSelecionado(null)} />
                     )
                 }
             </EventContainer>
