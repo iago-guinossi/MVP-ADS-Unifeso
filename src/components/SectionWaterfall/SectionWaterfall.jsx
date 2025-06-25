@@ -53,12 +53,12 @@ const Button = styled.button`
 `
 
 export function SectionWaterfall() {
-    const [cachoeiraSelecionada, setCachoeiraSelecionada] = useState(null);
+    const [cardSelecionado, setCardSelecionado] = useState(null);
 
     const cards = [];
         for (let i = 0; i < 3 && i < cachoeiras.length; i++) {
             cards.push(
-                <Card key={i} {...cachoeiras[i]} onClick={() => setCachoeiraSelecionada(cachoeiras[i])} />
+                <Card key={i} {...cachoeiras[i]} onClick={() => setCardSelecionado(cachoeiras[i])} />
             );
         }
 
@@ -68,8 +68,8 @@ export function SectionWaterfall() {
             <WaterfallContainer>
                 {cards}
                 {
-                    cachoeiraSelecionada && (
-                        <Modal trilha={cachoeiraSelecionada} onClose={() => setCachoeiraSelecionada(null)} />
+                    cardSelecionado && (
+                        <Modal card={cardSelecionado} onClose={() => setCardSelecionado(null)} />
                     )
                 }
             </WaterfallContainer>

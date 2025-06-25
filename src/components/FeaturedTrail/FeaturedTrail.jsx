@@ -53,12 +53,12 @@ const Button = styled.button`
 `
 
 export function FeaturedTrail() {
-    const [trilhaSelecionada, setTrilhaSelecionada] = useState(null);
+    const [cardSelecionado, setCardSelecionado] = useState(null);
 
     const cards = [];
     for (let i = 0; i < 3 && i < trilhas.length; i++) {
         cards.push(
-            <Card key={i} {...trilhas[i]} onClick={() => setTrilhaSelecionada(trilhas[i])} />
+            <Card key={i} {...trilhas[i]} onClick={() => setCardSelecionado(trilhas[i])} />
         );
     }
 
@@ -69,8 +69,8 @@ export function FeaturedTrail() {
                 {cards}
             </ContainerTrail>
             {
-                trilhaSelecionada && (
-                    <Modal trilha={trilhaSelecionada} onClose={() => setTrilhaSelecionada(null)} />
+                cardSelecionado && (
+                    <Modal card={cardSelecionado} onClose={() => setCardSelecionado(null)} />
                 )
             }
             <Button>Conheça mais!</Button>
