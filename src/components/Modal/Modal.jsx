@@ -53,9 +53,7 @@ const CloseButton = styled.button`
 `;
 
 const Image = styled.img`
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 500px;
   border-radius: 12px;
 `;
 
@@ -71,27 +69,29 @@ const StyledLetterX = styled(LetterX)`
   height: 10px;
 `
 
-export function Modal({ trilha, onClose }) {
+export function Modal({ card, onClose, isEvent = false }) {
   return (
     <ModalOverlay onClick={onClose}>
       <Container onClick={e => e.stopPropagation()}>
         <CloseButton onClick={onClose}><StyledLetterX/></CloseButton>
-        <Carousel images={trilha.images}/>
+        {!isEvent && <Carousel images={card.images}/>}
+        {isEvent && <Image {...card.images[0]}/>}
         <Info>
-          <h2>{trilha.name}</h2>
-          <p><strong>Localização:</strong> {trilha.location}</p>
-          <p><strong>Distância:</strong> {trilha.distance}</p>
-          <p>{trilha.summary}</p>
-          <iframe
-            src={trilha.map}
+          <h2>{card.name}</h2>
+          <p><strong>Localização:</strong> {card.location}</p>
+          {card.distance && <p><strong>Distância:</strong> {card.distance}</p>}
+          <p>{card.summary}</p>
+          {card.date && <p>{card.date}</p>}
+          {!isEvent && (<iframe
+            src={card.map}
             width="100%"
             height="300"
             style={{ border: 0, marginTop: "16px", borderRadius: "8px" }}
             allowFullScreen=""
             loading="lazy"
-            title="Mapa da trilha"
+            title="Mapa do card"
             referrerPolicy="no-referrer-when-downgrade"
-          />
+          />)}
         </Info>
       </Container>
     </ModalOverlay>
