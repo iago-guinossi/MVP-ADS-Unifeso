@@ -53,9 +53,9 @@ const Button = styled(Link)`
 export function SectionBio() {
     return (
         <Container>
-            <Title>Biodiversidade do Parque Nacional da Serra dos Órgãos</Title>
+            <Title>Biodiversidade de Teresópolis</Title>
             <Text>
-                Localizado na região serrana do Rio de Janeiro, o Parque Nacional da Serra dos Órgãos é um verdadeiro refúgio de biodiversidade da Mata Atlântica. Com altitudes que variam de 100 a mais de 2.200 metros, o parque abriga uma grande diversidade de habitats, que sustentam centenas de espécies de fauna e flora — muitas delas ameaçadas de extinção ou exclusivas da região.
+                Teresópolis, localizada na Região Serrana do Rio de Janeiro, é um verdadeiro santuário ecológico. Seus parques naturais abrigam uma das maiores riquezas da Mata Atlântica, um dos biomas mais biodiversos — e ameaçados — do planeta. Entre os destaques estão o Parque Nacional da Serra dos Órgãos, o Parque Estadual dos Três Picos e o Parque Natural Municipal Montanhas de Teresópolis, que juntos formam um corredor ecológico vital para a conservação da fauna e flora da região.
             </Text>
             <Button to="/biodiversidade">Saiba mais!</Button>
         </Container>
