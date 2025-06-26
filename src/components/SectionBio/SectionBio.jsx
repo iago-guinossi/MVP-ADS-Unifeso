@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -25,7 +26,9 @@ const Text = styled.span`
     margin-bottom: 12px;
 `
 
-const Button = styled.button`
+const Button = styled(Link)`
+    all: unset;
+    display: block;
     font-size: 18px;
     border-radius: 99px;
     background-color: var(--green);
@@ -54,7 +57,7 @@ export function SectionBio() {
             <Text>
                 Localizado na região serrana do Rio de Janeiro, o Parque Nacional da Serra dos Órgãos é um verdadeiro refúgio de biodiversidade da Mata Atlântica. Com altitudes que variam de 100 a mais de 2.200 metros, o parque abriga uma grande diversidade de habitats, que sustentam centenas de espécies de fauna e flora — muitas delas ameaçadas de extinção ou exclusivas da região.
             </Text>
-            <Button>Saiba mais!</Button>
+            <Button to="/biodiversidade">Saiba mais!</Button>
         </Container>
     )
 }

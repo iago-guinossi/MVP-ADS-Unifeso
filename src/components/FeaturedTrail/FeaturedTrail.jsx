@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { useState } from "react"
 import { Card } from '../Card';
 import { Modal } from '../Modal';
+import { Link } from 'react-router';
 
 const Container = styled.div`
     width: 100%;
@@ -30,7 +31,9 @@ const Title = styled.h1`
     color: var(--black);
 `
 
-const Button = styled.button`
+const Button = styled(Link)`
+    all: unset;
+    display: block;
     font-size: 18px;
     border-radius: 99px;
     background-color: var(--green);
@@ -73,7 +76,7 @@ export function FeaturedTrail() {
                     <Modal card={cardSelecionado} onClose={() => setCardSelecionado(null)} />
                 )
             }
-            <Button>Conheça mais!</Button>
+            <Button to="/trilhas">Conheça mais!</Button>
         </Container>
     )
 }

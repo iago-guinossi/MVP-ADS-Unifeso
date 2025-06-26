@@ -3,6 +3,7 @@ import { useState } from "react";
 import { DropDown } from "@/components/Dropdown/Dropdown";
 import LetterX from '@/assets/letterx.svg?react'
 import Threebars from '@/assets/threebars.svg?react'
+import { Link } from "react-router";
 
 const ContainerDesktop = styled.div`
   display: flex;
@@ -18,7 +19,10 @@ const ContainerButton = styled.div`
     
 `
 
-const ButtonLogin = styled.button`
+const ButtonLogin = styled(Link)`
+  all: unset;
+  display: block;
+  padding: 5px;
   background-color: transparent;
   border: 1px solid var(--black);
   border-radius: 25px;
@@ -89,7 +93,9 @@ const ContainerSideBar = styled.div`
   opacity: ${({ $show }) => ($show ? 1 : 0)};
 `
 
-const SideBarButton = styled.div`
+const SideBarButton = styled(Link)`
+  all: unset;
+  display: block;
   padding: 8px;
   cursor: pointer;
   font-size: 16px;
@@ -109,9 +115,9 @@ export function NavButton({ name, navButtons }) {
   return (
     <>
       <ContainerDesktop>
-        <DropDown name={'Descubra'} navButtons={['Trilhas', 'Cachoeiras', 'Eventos']} />
-        <DropDown name={'Sobre'} navButtons={['Biodiversidade', 'Temporada', 'Contato']} />
-        <ButtonLogin><LoginText>Login ADM</LoginText></ButtonLogin>
+        <DropDown name={'Descubra'} navButtons={[{"name":"Trilhas", "path": "/trilhas"}, {"name": "Cachoeiras", "path": "/cachoeiras"}, {"name": "Eventos", "path": "/eventos"}]} />
+        <DropDown name={'Sobre'} navButtons={[{"name": "Biodiversidade", "path": "/biodiversidade"}, {"name":"Temporada", "path": "/temporada"}]} />
+        <ButtonLogin to="/login"><LoginText>Login ADM</LoginText></ButtonLogin>
       </ContainerDesktop>
       <ContainerMobile>
         <Button onClick={() => setOpen(!open)}>
@@ -119,13 +125,12 @@ export function NavButton({ name, navButtons }) {
           <StyledLetterX $visible={open} />
         </Button>
         <ContainerSideBar $show={open}>
-          <SideBarButton>Trilhas</SideBarButton>
-          <SideBarButton>Cachoeiras</SideBarButton>
-          <SideBarButton>Eventos</SideBarButton>
-          <SideBarButton>Biodiversidade</SideBarButton>
-          <SideBarButton>Temporada</SideBarButton>
-          <SideBarButton>Contato</SideBarButton>
-          <SideBarButton>Login ADM</SideBarButton>
+          <SideBarButton to="/trilhas">Trilhas</SideBarButton>
+          <SideBarButton to="/cachoeiras">Cachoeiras</SideBarButton>
+          <SideBarButton to="/eventos">Eventos</SideBarButton>
+          <SideBarButton to="/biodiversidade">Biodiversidade</SideBarButton>
+          <SideBarButton to="/temporada">Temporada</SideBarButton>
+          <SideBarButton to="/login">Login ADM</SideBarButton>
         </ContainerSideBar>
       </ContainerMobile>
     </>

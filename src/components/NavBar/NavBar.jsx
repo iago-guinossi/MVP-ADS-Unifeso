@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import logo from '@/assets/logo.jpeg'
 import { NavButton } from "@/components/NavButton";
+import { Link } from "react-router";
 
 const Container = styled.div`
     height: 120px;
@@ -20,12 +21,20 @@ const Logo = styled.img`
     overflow: hidden;
 `
 
+const NavLogo = styled(Link)`
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+`
+
 export function NavBar() {
 
   return (
     <Container>
-      <Logo src={logo} alt='Logo Teré Verde'/>
-      <NavButton/>
+      <NavLogo to="/">
+        <Logo src={logo} alt='Logo Teré Verde' />
+      </NavLogo>
+      <NavButton />
     </Container>
 
   )

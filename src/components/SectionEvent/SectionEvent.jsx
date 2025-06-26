@@ -3,6 +3,7 @@ import eventos from '@/eventos/eventos.json'
 import { useState } from "react";
 import { Card } from "../Card";
 import { Modal } from "../Modal";
+import { Link } from "react-router";
 
 const Container = styled.div`
     width: 100%;
@@ -30,7 +31,9 @@ const EventContainer = styled.div`
     gap: 20px;
 `
 
-const Button = styled.button`
+const Button = styled(Link)`
+    all: unset;
+    display: block;
     font-size: 18px;
     border-radius: 99px;
     background-color: var(--white);
@@ -73,7 +76,7 @@ export function SectionEvent() {
                     )
                 }
             </EventContainer>
-            <Button>Veja mais!</Button>
+            <Button to="/eventos">Veja mais!</Button>
         </Container>
     )
 }

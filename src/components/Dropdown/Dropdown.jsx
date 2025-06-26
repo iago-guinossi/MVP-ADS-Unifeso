@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import Arrow from '@/assets/arrow.svg?react'
+import { Link } from "react-router";
 
 const Container = styled.div`
   min-width: 130px;
@@ -46,7 +47,9 @@ const StyledArrow = styled(Arrow)`
   fill: var(--black);
 `
 
-const DropdownButton = styled.div`
+const DropdownButton = styled(Link)`
+  all: unset;
+  display: block;
   padding: 8px;
   cursor: pointer;
   font-size: 16px;
@@ -67,7 +70,7 @@ export function DropDown({ name, navButtons }) {
             <Button onClick={() => setOpen(!open)}>{name} <StyledArrow $open={open} /></Button>
             <ContainerDropdown $show={open}>
                 {navButtons.map((navButton, index) => {
-                    return <DropdownButton key={index}>{navButton}</DropdownButton>
+                    return <DropdownButton key={index} to={navButton.path}>{navButton.name}</DropdownButton>
                 })}
             </ContainerDropdown>
         </Container>

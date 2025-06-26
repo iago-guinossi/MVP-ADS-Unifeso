@@ -53,7 +53,8 @@ const CloseButton = styled.button`
 `;
 
 const Image = styled.img`
-  height: 500px;
+  max-height: 500px;
+  max-width: 100%;
   border-radius: 12px;
 `;
 
