@@ -3,8 +3,9 @@ import { Home } from "./pages/Home/Home"
 import { Events } from "./pages/Events"
 import { Trails } from "./pages/Trails"
 import { Waterfalls} from "./pages/WaterFalls"
-import { Biodiversity } from "./pages/Biodiversity/Biodiversity"
+import { Biodiversity } from "./pages/Biodiversity"
 import { Season } from "./pages/Season"
+import { Login } from "./pages/Login"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route path="/cachoeiras" element={<Waterfalls/>}/>
       <Route path="/biodiversidade" element={<Biodiversity/>}/>
       <Route path="/temporada" element={<Season/>}/>
+      <Route path="/login" element={<Login/>}/>
     </Routes>
     </BrowserRouter>
       
