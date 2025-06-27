@@ -91,6 +91,8 @@ const ContainerSideBar = styled.div`
   top: 120px;
   background-color: var(--white);
   opacity: ${({ $show }) => ($show ? 1 : 0)};
+  pointer-events: ${({ $show }) => ($show ? 'auto' : 'none')};
+  transition: opacity 0.3s ease;
 `
 
 const SideBarButton = styled(Link)`
