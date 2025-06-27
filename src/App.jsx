@@ -10,11 +10,13 @@ import { ADMTrails } from "./pages/ADMTrails"
 import { ADMEvents } from "./pages/ADMEvents"
 import { ADMWaterfalls } from "./pages/ADMWaterFalls/ADMWaterFalls"
 import { ADMSeason } from "./pages/ADMSeason/ADMSeason"
+import { ScrollToTop } from "./service/ScrollToTop"
 
 function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <Routes>
       <Route index element={<Home/>}/>
       <Route path="/eventos" element={<Events/>}/>
