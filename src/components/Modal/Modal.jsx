@@ -20,7 +20,7 @@ const Container = styled.div`
   width: 90%;
   padding: 24px;
   position: relative;
-  max-height: 90vh;
+  max-height: 90dvh;
   text-align: center;
   overflow-y: auto;
   scroll-behavior: smooth;
