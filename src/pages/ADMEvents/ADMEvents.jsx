@@ -32,16 +32,34 @@ const EventContainer = styled.div`
     gap: 20px;
 `
 
+const CreateButton = styled.button`
+    padding: 8px 16px;
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+`
+
 export function ADMEvents() {
 
     const [cardSelecionado, setCardSelecionado] = useState(null);
+
+    const newCard = {
+        "name": "",
+        "sumarry": "",
+        "images": [],
+        "location":"",
+        "date": ""
+    }
 
     return (
         <>
             <ADMNavBar />
             <Container>
             <Title>Edição Eventos</Title>
-
+                <CreateButton onClick={() => setCardSelecionado(newCard)}>Criar Card</CreateButton>
                 <EventContainer>
                     {eventos.map((evento, index) => (
                         <Card key={index} {...evento} onClick={() => setCardSelecionado(evento)} />

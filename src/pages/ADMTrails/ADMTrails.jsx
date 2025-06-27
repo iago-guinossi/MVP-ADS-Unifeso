@@ -32,16 +32,35 @@ const SubContainer = styled.div`
     gap: 20px;
 `
 
+const CreateButton = styled.button`
+    padding: 8px 16px;
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+`
+
 export function ADMTrails() {
 
     const [cardSelecionado, setCardSelecionado] = useState(null);
 
+    const newCard = {
+        "name": "",
+        "sumarry": "",
+        "map": "",
+        "images": [],
+        "distance":"",
+        "location":""
+    }
+
     return (
         <>
-            <ADMNavBar/>
+            <ADMNavBar />
             <Container>
-            <Title>Edição Trilhas</Title>
-
+                <Title>Edição Trilhas</Title>
+                <CreateButton onClick={() => setCardSelecionado(newCard)}>Criar Card</CreateButton>
                 <SubContainer>
                     {trilhas.map((trilha, index) => (
                         <Card key={index} {...trilha} onClick={() => setCardSelecionado(trilha)} />

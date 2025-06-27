@@ -8,7 +8,20 @@ const Container = styled.div`
   height: 300px;
   border-radius: 12px;
   overflow: hidden;
+  background-color: var(--green);
 `;
+
+const Placeholder = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 1.1rem;
+  background: var(--green);
+`;
+
 
 const Image = styled.img`
   width: 100%;
@@ -38,7 +51,7 @@ const ArrowIcon = styled(Arrow)`
 `;
 
 
-export function Carousel({ images }) {
+export function Carousel({ images = [] }) {
   const [index, setIndex] = useState(0);
 
   const next = () => setIndex((index + 1) % images.length);
@@ -47,11 +60,14 @@ export function Carousel({ images }) {
   return (
     <Container>
       <Button $direction="left" onClick={prev}>
-        <ArrowIcon $direction="left"/>
+        <ArrowIcon $direction="left" />
       </Button>
-      <Image src={images[index].src} alt={images[index].alt} />
+      {images.length > 0
+        ? <Image src={images[index].src} alt={images[index].alt} />
+        : <Placeholder>Aguardando Imagem</Placeholder>
+      }
       <Button $direction="right" onClick={next}>
-        <ArrowIcon $direction="right"/>
+        <ArrowIcon $direction="right" />
       </Button>
     </Container>
   );

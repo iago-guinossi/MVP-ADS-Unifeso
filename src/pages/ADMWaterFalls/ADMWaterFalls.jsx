@@ -32,16 +32,34 @@ const SubContainer = styled.div`
     gap: 20px;
 `
 
+const CreateButton = styled.button`
+    padding: 8px 16px;
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+`
+
 export function ADMWaterfalls() {
 
     const [cardSelecionado, setCardSelecionado] = useState(null);
+
+    const newCard = {
+        "name": "",
+        "sumarry": "",
+        "map": "",
+        "images": [],
+        "location":""
+    }
 
     return (
         <>
             <ADMNavBar />
             <Container>
             <Title>Edição Cachoeiras</Title>
-
+                <CreateButton onClick={() => setCardSelecionado(newCard)}>Criar Card</CreateButton>
                 <SubContainer>
                     {cachoeiras.map((cachoeira, index) => (
                         <Card key={index} {...cachoeira} onClick={() => setCardSelecionado(cachoeira)} />

@@ -139,6 +139,17 @@ const LabelInputImage = styled.label`
     flex-grow: 1;
 `
 
+const Placeholder = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 1.1rem;
+  background: var(--green);
+`;
+
 export function ModalEdit({ card, onClose, isEvent = false }) {
     const [data, setData] = useState(card);
 
@@ -157,20 +168,6 @@ export function ModalEdit({ card, onClose, isEvent = false }) {
         window.location.reload();
     };
 
-    const handleFileChange = idx => e => {
-        const file = e.target.files[0];
-        if (!file) return;
-        const blobUrl = URL.createObjectURL(file);
-        setData(d => ({
-            ...d,
-            images: d.images.map((img, i) =>
-                i === idx
-                    ? { src: blobUrl, alt: d.name, file }
-                    : img
-            ),
-        }));
-    };
-
     const handleRemoveImage = idx => () => {
         setData(d => ({
             ...d,
@@ -185,6 +182,26 @@ export function ModalEdit({ card, onClose, isEvent = false }) {
         }));
     };
 
+    const handleFileChange = idx => e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const blobUrl = URL.createObjectURL(file);
+
+        const hasEmptySlot = data.images.some(img => !img.src);
+        if (!hasEmptySlot) {
+            handleAddImage();
+        }
+
+        setData(d => ({
+            ...d,
+            images: d.images.map((img, i) =>
+                i === idx
+                    ? { src: blobUrl, alt: d.name, file }
+                    : img
+            ),
+        }));
+    };
+
     return (
         <ModalOverlay>
             <Container onClick={(e) => e.stopPropagation()}>
@@ -195,7 +212,9 @@ export function ModalEdit({ card, onClose, isEvent = false }) {
                 {!isEvent ? (
                     <Carousel images={data.images} />
                 ) : (
-                    <Image src={data.images[0].src} alt={data.images[0].alt} />
+                    card.images.length > 0
+                        ? <Image src={data.images[0].src} alt={data.images[0].alt} />
+                        : <Placeholder>Aguardando imagem</Placeholder>
                 )}
 
                 <Info>
@@ -225,8 +244,7 @@ export function ModalEdit({ card, onClose, isEvent = false }) {
                     {!isEvent && (
                         <>
                             <Text>Link do Google Maps:</Text>
-                            <input value={data.map} onChange={handleChange("date")}
-                            />
+                            <input value={data.map} onChange={handleChange("date")} placeholder="Link do Google Maps" />
                         </>
                     )}
 
@@ -252,7 +270,8 @@ export function ModalEdit({ card, onClose, isEvent = false }) {
                         })}
                     {isEvent && (
                         <ImageSelector>
-                            {data.images[0].src && (
+
+                            {data.images.length > 0 && data.images[0].src && (
                                 <PreviewImage src={data.images[0].src} alt={data.images[0].alt} />
                             )}
                             <LabelInputImage>
