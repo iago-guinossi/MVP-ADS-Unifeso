@@ -11,7 +11,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  min-height: calc(100vh - 390px)
+  min-height: calc(100vh - 390px);
 `;
 
 const Input = styled.input`
@@ -49,7 +49,7 @@ export function Login(){
   const handleLogin = () => {
     if (usuario === 'adm' && senha === 'adm') {
       setErro(false);
-      navigate('/trilhas');
+      navigate('/adm-trilhas');
     } else {
       setErro(true);
     }
